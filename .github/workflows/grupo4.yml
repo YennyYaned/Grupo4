@@ -10,7 +10,7 @@ env:
   MOSTRAR_DESPEDIDA: "true"
 
 jobs:
-  workflow-grupo:
+  workflow-grupo4:
     runs-on: ubuntu-latest
 
     steps:
