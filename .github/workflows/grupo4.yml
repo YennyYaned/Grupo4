@@ -41,7 +41,7 @@ jobs:
         run: |
           echo "Este mensaje no se mostrará porque la condición es falsa"
           
-      - name: Sin despedida
+      - name: Archivo JSON
         run: |
           echo "El contexto de JSON DEL evento es"
           echo '${{ toJson(github)}}'
