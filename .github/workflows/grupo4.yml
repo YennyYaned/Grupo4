@@ -40,6 +40,12 @@ jobs:
         if: env.MOSTRAR_DESPEDIDA == 'false'
         run: |
           echo "Este mensaje no se mostrará porque la condición es falsa"
+          
+      - name: Sin despedida
+        run: |
+          echo "El contexto de JSON DEL evento es"
+          echo '${{ toJson(github)}}'
+          
 
 
 
