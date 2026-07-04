@@ -25,6 +25,21 @@ jobs:
           echo "Variable 2 - CURSO: $CURSO"
           echo "Variable 3 - MOSTRAR_DESPEDIDA: $MOSTRAR_DESPEDIDA"
 
+      - name: Variables del entorno del Github Actions
+        run: |
+          echo "Nombre del repositorio: $GITHUB_REPOSITORY"
+          echo "Dueño del repositorio: $GITHUB_REPOSITORY_OWNER"
+          echo "Nombre del workflow: $GITHUB_WORKFLOW"
+
+
+
+
+
+
+
+
+
+
 
 
 
