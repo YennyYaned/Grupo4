@@ -2,8 +2,8 @@ name: Grupo-4
 
 on:
   push:
-    branches: [*main*]
-
+    branches:
+      - main
 env:
   NOMBRE_GRUPO: "Grupo Nro4"
   CURSO: "Herramientas de Desarrollo"
