@@ -1,4 +1,4 @@
-name: Grupo-4
+name: Grupo4
 
 on:
   push:
@@ -31,6 +31,15 @@ jobs:
           echo "Dueño del repositorio: $GITHUB_REPOSITORY_OWNER"
           echo "Nombre del workflow: $GITHUB_WORKFLOW"
 
+      - name: Con Despedida
+        if: env.MOSTRAR_DESPEDIDA == 'true'
+        run: |
+          echo "Hasta luego, integrantes del $NOMBRE_GRUPO"
+
+      - name: Sin despedida
+        if: env.MOSTRAR_DESPEDIDA == 'false'
+        run: |
+          echo "Este mensaje no se mostrará porque la condición es falsa"
 
 
 
