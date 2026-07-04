@@ -1,0 +1,22 @@
+name: Grupo-4
+
+on:
+  push:
+    branches: [*main*]
+
+env:
+  NOMBRE_GRUPO: "Grupo Nro4"
+  CURSO: "Herramientas de Desarrollo"
+  MOSTRAR_DESPEDIDA: "true"
+
+jobs:
+  workflow-grupo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Prueba de mensajes
+        run: |
+          echo "Hola, bienvenidos integrantes del $NOMBRE_GRUPO"
