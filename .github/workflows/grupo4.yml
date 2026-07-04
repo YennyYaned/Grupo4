@@ -18,3 +18,16 @@ jobs:
       - name: Prueba de mensajes
         run: |
           echo "Hola, bienvenidos integrantes del $NOMBRE_GRUPO"
+          
+      - name: Variables creada en el workflow
+        run: |
+          echo "Variable 1 - NOMBRE_GRUPO: $NOMBRE_GRUPO"
+          echo "Variable 2 - CURSO: $CURSO"
+          echo "Variable 3 - MOSTRAR_DESPEDIDA: $MOSTRAR_DESPEDIDA"
+
+
+
+
+
+
+    
