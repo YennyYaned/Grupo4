@@ -14,9 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del repositorio
-        uses: actions/checkout@v4
-
+      
       - name: Prueba de mensajes
         run: |
           echo "Hola, bienvenidos integrantes del $NOMBRE_GRUPO"
